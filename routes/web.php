@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\GoalController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MoneyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('goal', [GoalController::class, 'index']);
+Route::get('money', [MoneyController::class, 'index']);

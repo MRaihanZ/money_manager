@@ -11,7 +11,10 @@ class MoneyController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            "title" => "Money Page",
+        ];
+        return view('money', $data);
     }
 
     /**

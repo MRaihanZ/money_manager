@@ -11,7 +11,11 @@ class GoalController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            "title" => "Goal Page",
+        ];
+
+        return view("goal", $data);
     }
 
     /**
